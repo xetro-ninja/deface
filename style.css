@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height:100%;
+    background:url(images/bg.jpg) rgba(6, 0, 3, 0.884);
+    background-size:cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.warning_img img {
+    width:  310px;
+    height: auto;
+    animation: blink 2s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.warning {
+    margin-top: 10px;
+    color: rgb(255, 0, 0);
+    font-size: 36px;
+    font-style: bold;
+}
+
+.intro {
+    color: rgb(0, 255, 0);
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-style: bold;
+    margin-top: 40px;
+}
+
+.xetro_ninja img {
+    height: 230px;
+    width: auto;
+}
+.color {
+    animation: color 5s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.vason {
+    margin-top: 10px;
+    color: white;
+    font-size: 22px;
+    animation: vason 2s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animation */
+
+@keyframes blink{
+    0% {
+        opacity: 1.0
+    }
+    50% {
+        opacity: 0.0
+    }
+    100%{
+        opacity: 1.0
+    }
+}
+
+@keyframes color{
+    0%{
+        color: purple;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: red;
+    }
+    100%{
+        color: orange;
+    }
+}
+
+@keyframes vason{
+    100% {
+        letter-spacing: 5px;
+    }
+}
+
+@media all and (max-width: 430px){
+    .warning_img img {
+        width: 200px;
+        height: auto;
+    }
+    .warning {
+        font-size: 20px;
+    }
+    .vason {
+        font-size: 16px;
+    }
+    .intro {
+        font-size: 22px;
+    }
+    .xetro_ninja img{
+        height: 160px;
+        width: auto;
+    }
+
+}
